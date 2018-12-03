@@ -1,0 +1,14 @@
+{
+    "name": "gaozhongqiang/filter_request_string",
+    "description": "过滤input传入的值",
+    "keywords": [],
+    "authors": [
+        {
+            "name": "gaozhongqiang",
+            "email": "1225000209@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^5.4 ||^5.0 || ^7.0 "
+    }
+}
