@@ -1,5 +1,5 @@
 {
-    "name": "gaozhongqiang/filter_request_string",
+    "name": "gaozhongqiang/filteHelper",
     "description": "过滤input传入的值",
     "keywords": [],
     "authors": [
@@ -9,6 +9,6 @@
         }
     ],
     "require": {
-        "php": "^5.4 ||^5.0 || ^7.0 "
+        "php": "^5.4"
     }
 }
