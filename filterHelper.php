@@ -6,17 +6,14 @@
  * Date: 2018/11/16
  * Time: 15:56
  */
-namespace Gaozhongqiang\Filter;
+namespace Gaozhongqiang\FilterHelper;
 
 class filterHelper{
     //过滤字符串
     public static function string($data){
-        return addslashes(stripslashes(self::htmlspecialchars_noamp(preg_replace("/^\s+|\s+$/","",$data))));
+        return addslashes(stripslashes(htmlspecialchars(preg_replace("/^\s+|\s+$/","",$data),ENT_QUOTES)));
     }
-    //过滤字符串
-    public static function htmlspecialchars_noamp($data){
-        return str_replace(array("'","\""),array('&#039;','&quot;'),$data);
-    }
+    
     //get 获取
 
     /**
