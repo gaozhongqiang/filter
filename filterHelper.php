@@ -6,9 +6,9 @@
  * Date: 2018/11/16
  * Time: 15:56
  */
-namespace Gaozhongqiang\FilterHelper;
+namespace Gaozhongqiang\Filter;
 
-class filterHelper{
+class filter{
     //过滤字符串
     public static function string($data){
         return addslashes(stripslashes(htmlspecialchars(preg_replace("/^\s+|\s+$/","",$data),ENT_QUOTES)));
