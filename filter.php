@@ -22,13 +22,13 @@ class filter{
      * @return string
      */
     public static function input_get_method($key,$isInt = 0){
-        $data = isset($_REQUEST[$key]) ? $_REQUEST[$key] : "";
+        $data = isset($_GET[$key]) ? $_GET[$key] : "";
         $isInt == 1 && $data = (int)$data;
         return self::string($data);
     }
     //post 获取
     public static function input_post_method($key,$isInt = 0){
-        $data =isset($_REQUEST[$key]) ? $_REQUEST[$key] : "";
+        $data =isset($_POST[$key]) ? $_POST[$key] : "";
         $isInt == 1 && $data = (int)$data;
         return self::string($data);
     }
